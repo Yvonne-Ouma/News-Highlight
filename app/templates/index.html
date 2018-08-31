@@ -9,7 +9,13 @@
         {% endif %}
     </head>
     <body>
-
+      <!-- general source section  -->
+      <h3> General Sources</h3>
+      <ul>
+         {% for general_source in general %}
+             <li>{{ general_source.name}}</li>
+         {% endfor %}
+     </ul>
     </body>
 </html>
-<h1>News</h1>
+
