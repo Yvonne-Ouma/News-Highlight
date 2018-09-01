@@ -48,6 +48,14 @@
               {% endfor %}
           </ul>
 
+          <!-- Science news  -->
+          <h3> Science News </h3>
+          <ul>
+             {% for science_source in science %}
+                 <li>{{ science_source.name}}</li>
+             {% endfor %}
+         </ul>
+         
     </body>
 </html>
 
