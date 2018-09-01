@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {% extends 'base.html'%}
         {% import 'macros.html' as macro%}
         <meta charset="utf-8">
         {% if title %}
@@ -10,6 +11,7 @@
         {% endif %}
     </head>
     <body>
+    {% block content %}
       <!-- general source section  -->
       <h3> General Sources</h3>
       <ul>
@@ -44,7 +46,7 @@
           <ul>
                 {{ macro.displaySourceList(science)}}
          </ul>
-         
+         {% endblock%}
     </body>
 </html>
 
