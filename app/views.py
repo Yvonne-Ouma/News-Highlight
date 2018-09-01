@@ -11,8 +11,9 @@ def index():
 
     # Getting breaking news source
     general_source = get_sources('general')
+    sports_source = get_sources('sports')
     title = 'Home - Welcome to the NewsHighlights '
-    return render_template('index.html',title = title, general = general_source)
+    return render_template('index.html',title = title, general = general_source, sports = sports_source)
 
 @app.route('/source/<int:source_id>')
 def source(source_id):
