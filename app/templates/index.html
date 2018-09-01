@@ -40,6 +40,14 @@
          {% endfor %}
      </ul>
 
+           <!-- Business news  -->
+           <h3> Business News </h3>
+           <ul>
+              {% for business_source in business %}
+                  <li>{{ business_source.name}}</li>
+              {% endfor %}
+          </ul>
+
     </body>
 </html>
 

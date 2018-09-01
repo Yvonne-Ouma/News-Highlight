@@ -14,8 +14,9 @@ def index():
     sports_source = get_sources('sports')
     technology_source = get_sources('technology')
     entertainment_source = get_sources('entertainment')
+    business_source = get_sources('business')
     title = 'Home - Welcome to the NewsHighlights '
-    return render_template('index.html',title = title, general = general_source, sports = sports_source,technology =technology_source, entertainment = entertainment_source)
+    return render_template('index.html',title = title, general = general_source, sports = sports_source,technology =technology_source, entertainment = entertainment_source, business =business_source)
 
 @app.route('/source/<int:source_id>')
 def source(source_id):
