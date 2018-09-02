@@ -10,6 +10,8 @@
     {% for article in articles %}
     <ul>
         <li>{{article.author}}</li>
+        <a href="{{article.url}}"><img src="{{article.urlToImage}}" alt="trr"></a>
+        {{article.urlToImage}}
     </ul>
     {%endfor%}
   </div>
