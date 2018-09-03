@@ -1,5 +1,9 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro %}
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/source.css')}}">
+{% endblock %}
 {% block content %}
 <div class="container-fluid">
   <div class="row mb-2" styles="text-align:center;">
@@ -7,7 +11,7 @@
     
   </div>
 
-  <div class="card" style="width:500px">
+  <div class="card" style="width:500px"id="me">
     {% for article in articles %}
     <ul>
       
