@@ -1,17 +1,17 @@
 {% macro displaySourceList(source_list) %}
-
-    {% for source in source_list %}
+<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
+        {% for source in source_list %}
         <li><a href="/source/{{source.id}}">{{ source.name}}</a></li>
     {% endfor %}
+</div>
 
 {% endmacro %}
 
 {% macro displayArticleList(article_list) %}
-
-    {% for article in article_list %}
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 review-card">
+       {% for article in article_list %}
         <li>{{ article.name}}</li>
-        
-
     {% endfor %}
+</div>
 
 {% endmacro %}

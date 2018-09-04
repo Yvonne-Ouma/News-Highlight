@@ -8,6 +8,7 @@
 {% block styles%}
 {{ super() }}
 <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 {% endblock %}
 <!-- Content block -->
         <meta charset="utf-8">
@@ -20,6 +21,7 @@
     </head>
     <body>
     {% block content %}
+    <h1 style="font-family: 'Cabin Sketch', cursive; font-size:50px; text-align:center; color:blue;">WELCOME TO NEWS HIGHLIGHTS</h1>
       <!-- general source section  -->
       <h3> General Sources</h3>
       <ul>
