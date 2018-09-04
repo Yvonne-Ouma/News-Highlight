@@ -1,4 +1,4 @@
-# Quotes
+# NEWS HIGHLIGHTS
 ## Author
 Yvonne Ouma
 
