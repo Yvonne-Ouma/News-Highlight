@@ -1,9 +1,8 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro %}
-{% block styles%}
-    {{ super() }}
+
     <link rel="stylesheet" href="{{url_for('static',filename='css/source.css')}}">
-{% endblock %}
+
 {% block content %}
 <div class="container-fluid">
   <div id="body">
@@ -11,12 +10,12 @@
           <h3> The Top Headlines</h3>
           
         </div>
-<div class="container">
+<div class="container" class="class">
       <div class="row" id="new">
         {% for article in articles %}
         <div class=" col-md-4 panel panel-default" style="margin:0px;">
           <ul>
-              <img  class="panel-img-top" src="{{article.urlToImage}}" alt="" style="padding-right:130px; max-width:800px;">
+              <img  class="panel-img-top" src="{{article.urlToImage}}" alt="" style="padding-right:130px; max-width:400px;">
             
             <div class="card-body">
               <li class="card-title">{{article.author}}</li>
