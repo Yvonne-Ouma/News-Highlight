@@ -8,6 +8,7 @@ Yvonne Ouma
 ### Prerequisites
 * web browser 
 * git
+* virtual environment
 
 ### Setup Instruction
 To start using this project use the following commands:
