@@ -21,42 +21,52 @@
     </head>
     <body>
     {% block content %}
-    <h1 style="font-family: 'Cabin Sketch', cursive; font-size:50px; text-align:center; color:blue;">WELCOME TO NEWS HIGHLIGHTS</h1>
-      <!-- general source section  -->
-      <h3> General Sources</h3>
-      <ul>
-            {{ macro.displaySourceList(general)}}
-     </ul>
-      <!-- Sports news  -->
-      <h3> Sports News </h3>
-      <ul>
-            {{ macro.displaySourceList(sports)}}
-     </ul>
+    <div class="container">
+<h1 style="font-family: 'Cabin Sketch', cursive; font-size:50px; text-align:center; color:blue;">WELCOME TO NEWS
+      HIGHLIGHTS</h1>
+<!-- general source section  -->
+<div class="row">
+      <div class="col-md-3">
+            <!-- Sports news  -->
+            <h3> Sports News </h3>
+            <ul>
+                  {{ macro.displaySourceList(sports)}}
+            </ul>
+      </div>
+      <div class="col-md-3">
+            <!-- Technology news  -->
+            <h3> Technology News </h3>
+            <ul>
+                  {{ macro.displaySourceList(technology)}}
+            </ul>
+      </div>
+      <div class="col-md-3">
+            <!-- Entertainment news  -->
+            <h3> Entertainment News </h3>
+            <ul>
+                  {{ macro.displaySourceList(entertainment)}}
+            </ul>
+      </div>
+      <div class="col-md-2">
+            <!-- Business news  -->
+            <h3> Business News </h3>
+            <ul>
+                  {{ macro.displaySourceList(business)}}
+            </ul>
+      </div>
+      <div class="col-md-1">
+            <!-- Science news  -->
+            <h3> Science News </h3>
+            <ul>
+                  {{ macro.displaySourceList(science)}}
+            </ul>
+      </div>
+</div>
+</div>
 
-           <!-- Technology news  -->
-           <h3> Technology News </h3>
-           <ul>
-                {{ macro.displaySourceList(technology)}}
-          </ul>
-
-                <!-- Entertainment news  -->
-      <h3> Entertainment News </h3>
-      <ul>
-            {{ macro.displaySourceList(entertainment)}}
-     </ul>
-
-           <!-- Business news  -->
-           <h3> Business News </h3>
-           <ul>
-            {{ macro.displaySourceList(business)}}
-          </ul>
-
-          <!-- Science news  -->
-          <h3> Science News </h3>
-          <ul>
-                {{ macro.displaySourceList(science)}}
-         </ul>
-         {% endblock%}
+{% endblock%}
+    
+    
     </body>
 </html>
 
