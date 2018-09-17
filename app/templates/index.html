@@ -1,8 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        {% extends 'base.html'%}
-        {% import 'macros.html' as macro%}
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
         <!-- Styles block -->
 
 {% block styles%}
@@ -21,7 +18,7 @@
     </head>
     <body>
     {% block content %}
-    <div class="container">
+    <div class="container" style= "padding-top:60px;">
 <h1 style="font-family: 'Cabin Sketch', cursive; font-size:50px; text-align:center; color:blue;">WELCOME TO NEWS
       HIGHLIGHTS</h1>
 <!-- general source section  -->
@@ -66,7 +63,4 @@
 
 {% endblock%}
     
-    
-    </body>
-</html>
 
